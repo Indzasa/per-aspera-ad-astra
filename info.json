@@ -1,13 +1,20 @@
 {
   "name": "per-aspera-ad-astra",
   "version": "0.0.1",
-  "title": "per-aspera-ad-astra",
+  "title": "Per Aspera ad Astra",
   "author": "Indzasa",
   "homepage": "https://github.com/Indzasa/per-aspera-ad-astra",
   "description": "Modpack for my game",
   "factorio_version": "2.0",
   "dependencies": [
-    "base"
+    "base",
+	"space-age",
+	"? fdsl",
+	"? bztin",
+	"? aai-industry",
+	"? crushing-industry",
+	"? alloy-smelting",
+	"? atan-nuclear-science"
   ],
   "quality_required": false,
   "rail_bridges_required": false,
