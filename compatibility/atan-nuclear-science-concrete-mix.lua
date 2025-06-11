@@ -1,4 +1,4 @@
-if not mods["atan-nuclear-science"] and mods["crushing-industry"] then return end
+if not (mods["atan-nuclear-science"] and mods["crushing-industry"]) then return end
 
 -- make concrete in nuclear science's recipes be replaced with concrete barrels (which could spoil)
 -- replace 10 concrete with 4 concrete mix barrels
