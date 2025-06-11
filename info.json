@@ -4,7 +4,7 @@
   "title": "Per Aspera ad Astra",
   "author": "Indzasa",
   "homepage": "https://github.com/Indzasa/per-aspera-ad-astra",
-  "description": "Modpack for my game",
+  "description": "Factorio modpack that reflects the difficulties and challenges in the space age.",
   "factorio_version": "2.0",
   "dependencies": [
     "base",
