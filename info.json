@@ -9,10 +9,9 @@
   "dependencies": [
     "base",
 	"space-age",
-	"? fdsl",
+	"fdsl",
 	"? bztin",
 	"? aai-industry",
-	"? crushing-industry",
 	"? alloy-smelting",
 	"? atan-nuclear-science"
   ],
