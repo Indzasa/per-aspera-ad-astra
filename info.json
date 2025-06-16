@@ -11,9 +11,13 @@
 	"space-age",
 	"fdsl",
 	"? bztin",
+	"? bzlead",
+	"? bztitanium",
+	"? bzcarbon",
 	"? aai-industry",
 	"? alloy-smelting",
-	"? atan-nuclear-science"
+	"? atan-nuclear-science",
+	"? Moshine-assets"
   ],
   "quality_required": false,
   "rail_bridges_required": false,
