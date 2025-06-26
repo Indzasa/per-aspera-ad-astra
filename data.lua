@@ -1,1 +1,1 @@
-require "compatibility.moshine"
+--require "compatibility.moshine" (already implemented by mod author)
