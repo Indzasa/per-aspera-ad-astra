@@ -1,4 +1,5 @@
-if not mods["scrap-industry"] and settings.startup["scrap-industry-mech"].value then return end
+if not mods["scrap-industry"] then return end
+if not settings.startup["scrap-industry-mech"].value then return end
 
 local frep = require("__fdsl__.lib.recipe")
 
