@@ -1,6 +1,7 @@
 require "compatibility.scrap-industry-data"
 require "compatibility.lumber-mill-data"
 require "compatibility.recipe-fixes-data"
+require "balance.cybersyn2-data"
 
 --[[
 New stuff to implement:
@@ -18,8 +19,10 @@ removed hyarion due to conflicting promethium recipe, belts with Aquilo Overhaul
 molten plastics and wooden industry resin
 bz silica and silicon and moshine and other silicpn resourses
 зеленые платы лигнумус делает из деревянных и создает неэффективный рецепт без них но этот рецепт не учитывает модификации модами от BZ
+    пока оставил
 переработка в recycler лесопилки дает не те материалы из которых она была сделана
 аналогично в моде mini trains lead the way - проблема в том что рецепты надо менять на data stage
 конвееры из модов arig/hyarion и better aquillo оба делаются из зеленого, нужно сделать чтоббы один из другого следовал, а еще отсутствует loader для 90
 AAI Industy создает лишние рецепты (зеленая плата - не все материалы из BZ) и нефтянка (не учтены моды на нефтянку типа scrappy chemistry), убрать бы их
+    убрал эти рецепты с помощью моего нового мода'
 --]]

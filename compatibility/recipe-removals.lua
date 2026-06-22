@@ -31,6 +31,8 @@ end
 local conditional_rules = {
 	-- AAI industry adds recipe with wood, which is not needed if lignumis is present, so remove it
     { mods = {"aai-industry", "lignumis"}, recipes = {"electronic-circuit-wood"} },
+	-- AAI industry adds recipe for oil processing that is not modified by scrappy chemistry, and is redundant
+	{ mods = {"aai-industry", "scrap-chemistry"}, recipes = {"oil-processing-heavy"} },
 	-- Add other rules below as needed
 }
 
