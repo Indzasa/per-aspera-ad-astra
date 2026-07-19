@@ -14,6 +14,8 @@ recipe.ingredients = {
   { type = "item", name = "display-panel", amount = 1 },
 }
 
+--data:extend({recipe})
+
 f_tech.add_unlock("circuit-network", "cybersyn2-combinator")
 
 if not mods["scrap-industry"] then return end
@@ -24,9 +26,9 @@ if not ScrapIndustry then return end
 ScrapIndustry.items["cybersyn2-combinator"] = {
   scrap = "circuit-scrap",
   scale = ScrapIndustry.RARE,
-  failrate = 0.01,
+  failrate = 0.02,
 }
 ScrapIndustry.recipes["cybersyn2-combinator"] = {
   self_scrap = true,
-  failrate = 0.01,
+  failrate = 0.02,
 }
