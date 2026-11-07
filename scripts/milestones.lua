@@ -1,18 +1,29 @@
+--do return end
 if not script.active_mods["Milestones"] then return end
+
+local full_mod_list = {
+                    "per-aspera-ad-astra",
+                    "planet-muluna",
+                    "lignumis",
+                    "bztin",
+                    "bzlead",
+                    "bztitanium",
+                    "123lol", -- несуществующий мод
+                    "scrap-chemistry",
+                }
+
+local active_mods = {}
+for _, mod_name in ipairs(full_mod_list) do
+    if script.active_mods[mod_name] then
+        table.insert(active_mods, mod_name)
+    end
+end
 
 remote.add_interface("per-aspera-ad-astra", {
     milestones_presets = function()
         return {
             ["Per Aspera ad Astra"] = {
-                required_mods = {
-                    "per-aspera-ad-astra",
-                    "lignumis",
-                    "bztin",
-                    "bzlead",
-                    "bztitanium",
-                    "scrap-industry",
-                    "scrap-chemistry",
-                },
+                required_mods = active_mods,
                 milestones = {
                     {type="group", name="Common Resources"},
                     {type="item",  name="lumber", quantity=1},
@@ -53,7 +64,7 @@ remote.add_interface("per-aspera-ad-astra", {
 
                     {type="group", name="Nauvis"},
                     {type="technology", name="planet-discovery-nauvis", quantity=1},
-                    {type="item", name="uranium-concentrate", quantity=1},
+                    --{type="item", name="uranium-concentrate", quantity=1},
                     {type="item", name="biter-egg", quantity=1},
                     {type="item", name="biolab", quantity=1},
                     {type="kill", name="small-biter", quantity=1},
@@ -96,7 +107,7 @@ remote.add_interface("per-aspera-ad-astra", {
                     {type="item", name="electromagnetic-plant", quantity=1},
                     {type="item", name="lightning-collector", quantity=1},
                     {type="item", name="charged-iron-matrix", quantity=1},
-                    {type="item", name="stone-bacteria", quantity=1},
+                    --{type="item", name="stone-bacteria", quantity=1},
 
                     {type="group", name="Gleba"},
                     {type="technology", name="planet-discovery-gleba", quantity=1},
@@ -106,7 +117,7 @@ remote.add_interface("per-aspera-ad-astra", {
                     {type="item", name="biochamber", quantity=1},
                     {type="item", name="slipstack-seed", quantity=1},
                     {type="item", name="fluroflux", quantity=1},
-                    {type="item", name="urano-bacteria", quantity=1},
+                    --{type="item", name="urano-bacteria", quantity=1},
                     {type="item", name="stack-inserter", quantity=1},
                     {type="alias", name="overgrowth-yumako-soil", equals="overgrowth-jellynut-soil", quantity=1},
                     {type="kill", name="small-strafer-pentapod", quantity=1},
@@ -123,19 +134,19 @@ remote.add_interface("per-aspera-ad-astra", {
                     {type="item", name="quantum-processor", quantity=1},
 
                     {type="group", name="By-products and production waste"},                    
-                    {type="item",  name="woodchips", quantity=1000, next="x100"},
+                    --{type="item",  name="woodchips", quantity=1000, next="x100"},
                     {type="item",  name="sand", quantity=1000, next="x100"},
-                    {type="item",  name="iron-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="copper-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="mech-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="circuit-scrap", quantity=1000, next="x100"},                    
-                    {type="item",  name="lead-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="steel-scrap", quantity=1000, next="x100"},                    
-                    {type="item",  name="plastic-bits", quantity=1000, next="x100"},
-                    {type="item",  name="titanium-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="tungsten-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="holmium-scrap", quantity=1000, next="x100"},
-                    {type="item",  name="lithium-dust", quantity=1000, next="x100"},
+                    --{type="item",  name="iron-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="copper-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="mech-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="circuit-scrap", quantity=1000, next="x100"},                    
+                    --{type="item",  name="lead-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="steel-scrap", quantity=1000, next="x100"},                    
+                    --{type="item",  name="plastic-bits", quantity=1000, next="x100"},
+                    --{type="item",  name="titanium-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="tungsten-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="holmium-scrap", quantity=1000, next="x100"},
+                    --{type="item",  name="lithium-dust", quantity=1000, next="x100"},
                     {type="item",  name="spoilage", quantity=1000, next="x100"},
                     {type="item",  name="tar", quantity=1000, next="x100"},
                     {type="fluid",  name="butane", quantity=1000, next="x1000"},
